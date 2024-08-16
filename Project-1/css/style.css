@@ -11,19 +11,19 @@
 
 
 :root {
-
-
+    
     --text-primary-color: #000;
     --background-primary-color: #f8f9fa;
 
 }
 
 
+
+
 .page1 {
     height: 100vh;
     background-color: var(--background-primary-color) ;
     display: grid;
-    grid-template-columns: ;
     grid-template-rows: 12vh 1fr;
 }
 
@@ -52,6 +52,14 @@
 
 
 
+.left-header-side p {
+    font-weight: 450;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-primary-color);
+}
+
 
 
 .links-wraper {
@@ -72,23 +80,18 @@
     background-color: var(--background-primary-color);
     padding: 0.5rem;
     border-radius: 1rem;
-    transition: 0.6s ease;
+    transition: 0.3s ease;
     /* width: 60%; */
 }
 
 .links-wraper .link:hover {
     /* font-size: 1.6rem ; */
-    box-shadow: 3px 3px 5px grey , -4px -4px 10px var(--background-primary-color);
+    box-shadow: 3px 3px 5px rgb(191, 191, 191) , -4px -4px 10px var(--background-primary-color);
 
 }
 
 
-.left-header-side p {
-    font-weight: 450;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
+
 
 
 .main-page {
@@ -123,6 +126,7 @@
 }
 
 .additional-deco p {
+    color: var(--text-primary-color);
 font-size: 1.5rem ;
 font-weight: 300 ;
 text-align: center;
@@ -158,7 +162,103 @@ button:hover {
 
 
 .additional-deco p span {
-color: black;
+color: var(--text-primary-color);
 font-weight: bold;
     
 }
+
+
+
+
+.deco {
+    display: grid;
+    grid-template-rows: 2.3fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--text-primary-color);
+}
+
+
+
+.deco p {
+    font-size: 3rem;
+    text-align: center;
+    align-self: flex-end;
+    letter-spacing: 3px;
+}
+
+.deco p span {
+    font-weight: 600;
+}
+
+
+
+
+.typing-deco {
+    /* margin-top: 13px; */
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+
+.static-text {
+    line-height: 3rem;
+
+}
+
+
+.dynamic-text {
+list-style: none;
+line-height: 3rem;
+height: 3rem;
+overflow: hidden;
+}
+.dynamic-text span {
+    position: relative;
+}
+
+.dynamic-text span::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-primary-color);
+    border-left: 3px solid var(--text-primary-color);
+    animation: typing 2s steps(13) infinite ;
+}
+
+
+@keyframes typing {
+    0% {
+        left: 0%;
+    }
+
+    100% , 70% {
+        left: 100%;
+    }
+    
+}
+
+.dynamic-text li{
+    position: relative;
+    animation: scrollup 6s steps(3) infinite ;
+
+}
+
+
+@keyframes scrollup {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: calc( -3rem *3);
+    }
+}
+
+
