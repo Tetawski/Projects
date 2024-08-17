@@ -250,6 +250,9 @@ overflow: hidden;
 
 }
 
+#darkmode {
+    cursor: pointer;
+}
 
 @keyframes scrollup {
     0% {
@@ -260,5 +263,6 @@ overflow: hidden;
         top: calc( -3rem *3);
     }
 }
+
 
 
