@@ -8,7 +8,10 @@ let cssVariableValue2 = getComputedStyle(rootElement).getPropertyValue('--backgr
 let isdark = false;
 darkmode.addEventListener('click' , () => {
     if ( isdark !== true  ) {
-       
+        
+
+
+
         darkmode.style.filter = 'invert(100%)'
         logo.style.filter = 'invert(100%)'
         document.documentElement.style.setProperty('--text-primary-color' , '#f8f9fa' )
@@ -23,5 +26,9 @@ darkmode.addEventListener('click' , () => {
 
 
     }
+    darkmode.classList.add('sunrotation')
+        setTimeout (() => {
+            darkmode.classList.remove('sunrotation')
+        } , 2000)
     isdark = !isdark;
 }) 
