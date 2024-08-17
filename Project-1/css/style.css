@@ -265,8 +265,6 @@ overflow: hidden;
 }
 
 
-<<<<<<< HEAD
-=======
 .sunrotation {
     animation: rotate 2s ease 1 forwards;
 }
@@ -280,5 +278,4 @@ overflow: hidden;
         transform: rotate(360deg);
     }
 }
->>>>>>> darkmodeanimation
 
