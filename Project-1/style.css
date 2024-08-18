@@ -28,11 +28,16 @@
 }
 
 
+
+/* THE HEADER PAGE PART */
+
+
+
 .header {
     display: flex;
+    padding: 1.2rem;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 3rem;
 }
 
 .left-header-side {
@@ -47,7 +52,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    width: 30%;
+    /* width: 30%; */
 }
 
 
@@ -93,28 +98,36 @@
 
 
 
+/* THE MAIN PAGE PART */
+
+
 
 .main-page {
+    /* background-image: url(); */
     display: grid;
     grid-template-columns: 50% 1fr;
-    grid-template-rows: 55% 1fr;
+    grid-template-rows: 55% 0.7fr 0.3fr;
     overflow: hidden;
 
     
 }
 
 .hero-container {
-    grid-area: 1 / 2 / 3 / 3;
+    grid-area: 1 / 2 / 4 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../media/3dobjects/vecteezy_ai-generated-black-liquid-splashing-png-isolated-on_36743770.png);
+    background-size: cover;
+    background-position: center;
+    
 }
 
 
 .hero-container img {
-    position: relative;
-    top: 63%;
-    left: 50%;
-    translate: -50% -50%;
-    /* scale: 95%; */
-
+position: relative;
+top: 10%;
+    /* clip-path: circle(50% at 50% 50%); */
 }
 
 .additional-deco {
@@ -128,7 +141,7 @@
 .additional-deco p {
     color: var(--text-primary-color);
 font-size: 1.5rem ;
-font-weight: 300 ;
+font-weight: 370 ;
 text-align: center;
 }
 
@@ -154,7 +167,7 @@ button {
 }
 
 button:hover {
-    translate: 0 -3px;
+    translate: 0 -2px;
 }
 
 
@@ -165,6 +178,25 @@ button:hover {
 color: var(--text-primary-color);
 font-weight: bold;
     
+}
+
+
+
+.contact-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    /* margin-top: -30px; */
+    
+}
+.contact-icons-container img {
+    width: 45px;
+    transition: 0.3s ;
+}
+
+.contact-icons-container img:hover {
+    transform: scale(105%);
 }
 
 
