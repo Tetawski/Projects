@@ -25,6 +25,8 @@
     background-color: var(--background-primary-color) ;
     display: grid;
     grid-template-rows: 12vh 1fr;
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -37,6 +39,7 @@
     display: flex;
     padding: 1.2rem;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
     align-items: center;
 }
 
@@ -91,8 +94,7 @@
 }
 
 .links-wraper .link:hover {
-    /* font-size: 1.6rem ; */
-    box-shadow: 3px 3px 5px rgb(191, 191, 191) , -4px -4px 10px var(--background-primary-color);
+    box-shadow: 3px 3px 5px #cbcbcb , -4px -4px 10px var(--background-primary-color);
 
 }
 
@@ -103,12 +105,44 @@
 
 
 
+
+
+/* .hero-background {
+    position: absolute;
+    top: 5%;
+    left: 48%;
+    width: 700px;
+    z-index: -1;
+} */
+
+
+
+/* .paint {
+    position: absolute;
+    top: -10%;
+    left: -12%;
+    rotate: 45deg;
+    width: 500px;
+    z-index: 0;
+    
+}
+
+
+
+.paint2 {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: 900px;
+    rotate: 10deg;
+} */
+
 .main-page {
-    /* background-image: url(); */
     display: grid;
     grid-template-columns: 50% 1fr;
     grid-template-rows: 55% 0.7fr 0.3fr;
     overflow: hidden;
+    position: relative;
 
     
 }
@@ -119,9 +153,9 @@
     justify-content: center;
     align-items: flex-end;
     background-image: url(../media/3dobjects/vecteezy_ai-generated-black-liquid-splashing-png-isolated-on_36743770.png);
-    background-size:cover;
-    /* background-repeat: no-repeat; */
-    background-position: center;
+    background-size: 790px;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
     
 }
 
@@ -158,7 +192,7 @@ text-align: center;
 
 button {
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     width: 25%;
     border-radius: 1rem;
     border: none;
