@@ -105,38 +105,6 @@
 
 
 
-
-
-/* .hero-background {
-    position: absolute;
-    top: 5%;
-    left: 48%;
-    width: 700px;
-    z-index: -1;
-} */
-
-
-
-/* .paint {
-    position: absolute;
-    top: -10%;
-    left: -12%;
-    rotate: 45deg;
-    width: 500px;
-    z-index: 0;
-    
-}
-
-
-
-.paint2 {
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    width: 900px;
-    rotate: 10deg;
-} */
-
 .main-page {
     display: grid;
     grid-template-columns: 50% 1fr;
@@ -147,7 +115,7 @@
     
 }
 
-.hero-container {
+.hero-container {`
     grid-area: 1 / 2 / 4 / 3;
     display: flex;
     justify-content: center;
