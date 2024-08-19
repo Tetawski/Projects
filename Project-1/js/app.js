@@ -1,7 +1,20 @@
 const darkmode = document.getElementById('darkmode');
 const logo = document.getElementById('logo')
 const icons =document.querySelectorAll('img.icon')
-console.log(icons);
+const refresher = document.querySelector('div.left-header-side')
+
+
+
+refresher.addEventListener ('click', () => {    
+    
+    window.open('https://www.facebook.com/profile.php?id=100010917281791&locale=fr_FR', '_blank' , 'width = 400px' , 'height = 800px')
+    
+} ) 
+
+
+
+
+
 
 let rootElement = document.documentElement;
 let cssVariableValue1 = getComputedStyle(rootElement).getPropertyValue('--text-primary-color').trim();
@@ -37,7 +50,7 @@ for (let i = 0; i < icons.length; i++) {
 
     }
 
-    
+
     darkmode.classList.add('sunrotation')
         setTimeout (() => {
             darkmode.classList.remove('sunrotation')
