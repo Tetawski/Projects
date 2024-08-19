@@ -119,7 +119,8 @@
     justify-content: center;
     align-items: flex-end;
     background-image: url(../media/3dobjects/vecteezy_ai-generated-black-liquid-splashing-png-isolated-on_36743770.png);
-    background-size: cover;
+    background-size:cover;
+    /* background-repeat: no-repeat; */
     background-position: center;
     
 }
@@ -143,6 +144,7 @@ top: 10%;
     color: var(--text-primary-color);
 font-size: 1.5rem ;
 font-weight: 370 ;
+line-height: 35px;
 text-align: center;
 }
 
